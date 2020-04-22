@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb/base"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "allowImportExportEverywhere": true
+  },
+  "plugins": [ "import", "node", "prettier", "promise", "standard", "html", "lodash", "filenames" ],
+  "globals": {
+    "customElements": true,
+    "HTMLImports": false,
+    "Polymer": false,
+    "ShadyDOM": true,
+    "ShadyCSS": true,
+    "JSCompiler_renameProperty": true
+	},
+  "rules": {
+    "indent": [ "error", 3 ],
+    "linebreak-style": [ "error", "unix" ],
+    "quotes": [ "error", "double", { "allowTemplateLiterals": true } ],
+    "semi": [ "error", "always" ],
+    "arrow-parens": [ 2, "as-needed", { "requireForBlockBody": true } ],
+    "space-before-function-paren": [0],
+    "key-spacing": [0],
+    "quote-props": 0,
+    "no-console": 0,
+    "new-cap": [0],
+    "no-multi-spaces": [0],
+    "no-shadow": [0],
+    "no-unused-vars": [1],
+    "no-use-before-define": [2, "nofunc"],
+    "no-empty": [0],
+    "camelcase": [0],
+    "no-plusplus": [0],
+    "no-underscore-dangle": [0],
+    "dot-notation": [0],
+    "no-template-curly-in-string": [1],
+    "consistent-return": [1],
+    "import/no-duplicates": [1],
+    "import/prefer-default-export": [1],
+    "class-methods-use-this": [0],
+    "no-var": [0],
+    "one-var": [0],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "no-cond-assign": [0],
+    "no-loop-func": [0],
+    "react-hooks/rules-of-hooks": [0]
+  }
+}
